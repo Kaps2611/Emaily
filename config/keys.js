@@ -1,5 +1,5 @@
 //keys,js-figure out what set of credential to return
-if(ProcessingInstruction.env.NODE_ENV === 'production'){
+if(process.env.NODE_ENV === 'production'){
   //we are in the production 
   module.exports =require('./prod');
 }
