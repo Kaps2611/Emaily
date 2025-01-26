@@ -3,14 +3,17 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
+import Landing from './Landing';
+import Dashboard from './Dashboard';
 
-const Landing = () => <h2>Landing</h2>
-const Dashboard = () => <h2>Dashboard</h2>
+
+
 const SurveryNew = () => <h2>SurveryNew</h2>
 
 
 export class App extends Component {
-  componentDidMount(){
+  
+  componentDidMount() {
     this.props.fetchUser();
   }
   render() {

@@ -22,7 +22,9 @@ app.use(passport.session());
 
 require('./Routes/authRoutes')(app);
 
-
+if(process.env.NODE_ENV === 'production'){
+  
+}
 
 
 
